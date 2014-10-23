@@ -6,7 +6,7 @@ class ShakeItSpeareController < Sinatra::Base
   set :public_folder, File.expand_path('../../public', __FILE__)
 
   get '/' do
-    erb :'documentation/index'
+    erb :index
   end
 
 end
