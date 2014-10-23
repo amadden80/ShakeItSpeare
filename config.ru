@@ -1,13 +1,13 @@
 require 'bundler'
 Bundler.require
 
-require_relative 'models/user'
-require_relative 'controllers/shake_it_speare_api_controller'
-require_relative 'controllers/shake_it_speare_controller'
+require './models/user'
+require './controllers/shake_it_speare_api_controller'
+require './controllers/shake_it_speare_controller'
 
 
 # Global:  SHAKESPEARE
-require_relative 'lib/shake_it_speare'
+require './lib/shake_it_speare'
 SHAKESPEARE = ShakeItSpeare.new
 
 map('/api') { run ShakeItSpeareAPIController.new }
