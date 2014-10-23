@@ -10,5 +10,5 @@ require_relative 'controllers/shake_it_speare_controller'
 require_relative 'lib/shake_it_speare'
 SHAKESPEARE = ShakeItSpeare.new
 
-map('/api/v0.1') { run ShakeItSpeareAPIController.new }
+map('/api') { run ShakeItSpeareAPIController.new }
 map('/') { run ShakeItSpeareController.new }
