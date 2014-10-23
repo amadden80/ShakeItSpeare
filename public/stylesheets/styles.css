@@ -1,0 +1,9 @@
+.demo-examples{
+  background-color: lightgray;
+}
+
+.demo-examples td{
+  border: 1px solid black;
+  background-color: white;
+  padding: 1em;
+}
