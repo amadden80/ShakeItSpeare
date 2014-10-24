@@ -7,3 +7,14 @@
   background-color: white;
   padding: 1em;
 }
+
+.writing{
+  font-family: cursive;
+}
+
+.poem{
+  border: 1px solid black;
+  display: inline-block;
+  padding: 2em;
+  margin-left: 2em
+}

@@ -6,6 +6,10 @@ class ShakeItSpeareController < Sinatra::Base
   set :public_folder, File.expand_path('../../public', __FILE__)
 
   get '/' do
+    num_lines = 3
+    markov_degrees = 5
+    poem = SHAKESPEARE.write_poem(num_lines, markov_degrees)
+    @poem_lines = poem.split("\n")
     erb :index
   end
 

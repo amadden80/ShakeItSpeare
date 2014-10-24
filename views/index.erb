@@ -1,16 +1,22 @@
 <h2>Shake-It-Speare</h2>
 
+<hr>
+
 <h3>
-  Did Shakespeare write every Shakespeare work ever?
+  Did Shakespeare write every Shakespeare work ever? 
 </h3>
 
 <h3>
   NOT ANYMORE!
 </h3>
 
+<hr>
+
 <p>
   ShakeItSpeare uses a Markov Model of Shakespeare's entire body of work to write.
 </p>
+
+<hr>
 
 <table class='demo-examples'>
   <thead>
@@ -60,3 +66,14 @@
     </tr>
   </tbody>
 </table>
+
+<hr>
+
+<h4>Example Poem:</h4>
+<ul class='poem'>
+  <% @poem_lines.each do |line|%>
+    <p class='writing'>
+      <%= line %>
+    </p>
+  <% end %>
+</ul>

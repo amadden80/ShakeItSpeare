@@ -15,7 +15,6 @@ class ShakeItSpeare
   end
 
   def write_sentence(markov_degree=1, max_length=100)
-
     sentence = ''
     word = @words.sample
     previous_words = Array.new(markov_degree, '')
