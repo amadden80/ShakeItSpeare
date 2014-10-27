@@ -22,4 +22,10 @@ class ShakeItSpeareAPIController < Sinatra::Base
     }.to_json
   end
 
+  not_found do
+    content_type :json
+    status 404
+    {}.to_json
+  end
+
 end
